@@ -16,7 +16,7 @@ const Home = () => {
 	function funOnKeyDown(event) {
 
 		if (event.code === 'Enter') {
-			if (nuevaTarea.trim() === ' ') {
+			if (nuevaTarea.trim() === '') {
 				alert('Debes escribir el nombre de la tarea!')
 				return
 			}
@@ -41,6 +41,7 @@ const Home = () => {
 	return (
 		<div>
 			<div className="container contenedor">
+				<h1 className="lista">LISTA DE TAREAS</h1>
 				<ul>
 				<input
 					type="text"
@@ -55,7 +56,9 @@ const Home = () => {
 
 				))}
 				</ul>
+				<p className="cantidad">{valorInput.length} Tareas añadida</p>
 			</div>
+			
 
 		</div>
 	);
