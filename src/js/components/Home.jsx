@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { obtenerTareas } from "../TodoList";
+import obtenerTareas from "../TodoList";
 
 //create your first component
 const Home = () => {
